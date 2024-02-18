@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Protest+Revolution&family=Rethink+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Protest Revolution", sans-serif;
+    font-size: 20px;
+}
+
+body {
+    background-image: url(./images/img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.box {
+    width: 400px;
+    height: 350px;
+    background-color: rgb(255, 255, 255, 0.6);
+    border-radius: 6px;
+    transition: 0.8s ease-in;
+}
+
+.boxHeight {
+    height: 450px;
+    transition: 0.4s ease-in;
+}
+
+
+.txt,
+form {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 45px;
+}
+
+.txt p {
+    font-size: 22px;
+    word-spacing: 5px;
+    line-height: 30px;
+    font-weight: 1000;
+}
+
+form input {
+    margin-bottom: 10px;
+    width: 350px;
+    height: 45px;
+    padding: 10px;
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 1000;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+form input:focus-visible {
+    outline: 0px;
+}
+
+form button {
+
+    margin-top: 10px;
+    width: 180px;
+    height: 45px;
+    border: none;
+    background-color: rgba(12, 66, 57, 0.7);
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 5px;
+    box-shadow: 3px 2px 5px rgba(27, 117, 72, 0.6);
+    transition-duration: 0.2s ease-in;
+}
+
+form button:hover {
+    color: rgba(0, 0, 0);
+    background-color: rgb(190, 224, 213, 0.6);
+    box-shadow: 5px 2px 8px rgba(27, 117, 72, 0.6);
+    transition: 0.2s ease-out;
+    cursor: pointer;
+}
+
+.qrCode {
+    display: flex;
+    margin: 5px;
+    margin-top: 0px;
+    justify-content: center;
+    opacity: 0;
+    height: 0;
+    transition: .3s ease-out;
+}
+
+.show {
+
+    opacity: 1;
+    display: flex;
+    margin: 5px;
+    margin-top: 0px;
+    justify-content: center;
+    transition: 1.2s ease-in;
+}
+
+.qrCode img {
+    height: 155px;
+    border: 3px solid rgba(12, 66, 57);
+
+}
