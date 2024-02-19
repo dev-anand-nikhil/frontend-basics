@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: cursive;
+    background: linear-gradient(135deg, #153677, #4e0857);
+    width: 100%;
+    min-height: 100vh;
+    padding: 35px;
+}
+
+.card {
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 35px;
+    border-radius: 10px;
+    height: 100%;
+    max-height: 500px;
+    position: relative;
+    font-family: cursive;
+}
+
+h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.input {
+    margin: 30px 10px;
+}
+
+#text {
+
+    height: 40px;
+    width: 350px;
+    background-color: rgb(218, 238, 255);
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    position: absolute;
+}
+
+#text:focus {
+    outline: none;
+
+}
+
+button {
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(213, 95, 11);
+    color: white;
+    position: relative;
+    z-index: 1;
+    margin-left: 300px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+ul li {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    position: relative;
+}
+
+ul li::before {
+
+
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 16px;
+    left: 8px;
+}
+
+.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+.checked::before {
+    background-image: url(images/checked.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    top: 12px;
+    border: 1px solid black;
+    border-radius: 30%;
+    line-height: 0.8;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+
+}
+
+ul li span:hover {
+    box-shadow: 1px 1px 2px black;
+    background-color: #c7c7c7;
+    transition: 0.3s ease-in-out;
+}
+
+footer {
+    padding-right: 5px;
+    text-align: end;
+    color: white;
+    font-size: 15px;
+    height: 20px;
+    background: linear-gradient(135deg, #153677, #4e0857);
+}
