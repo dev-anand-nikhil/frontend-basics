@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 22px;
+    font-weight: 200;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    background-color: rgb(13, 91, 112);
+    text-align: center;
+    height: 60px;
+    font-size: 25px;
+    line-height: 1.2;
+    color: white;
+    word-spacing: 6px;
+}
+
+.method {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 120px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: rgb(20, 109, 134);
+
+}
+
+
+.logos {
+    padding: 20px 0px;
+    font-size: 20px;
+    border-radius: 10%;
+    text-align: center;
+    font-weight: 350;
+    color: white;
+    word-spacing: 1px;
+    transition: 0.3s ease-in-out;
+}
+
+.logos:hover {
+    transform: scale(1.2);
+    word-spacing: 1px;
+    transition: 0.3s ease-in-out;
+}
+
+button {
+    border: none;
+    font-size: 20px;
+}
+
+#calculator {
+    background-color: rgb(68, 16, 120);
+}
+
+#length {
+    background-color: rgb(116, 105, 12);
+}
+
+#currency {
+    background-color: rgb(91, 114, 14);
+}
+
+#weight {
+    background-color: rgb(6, 107, 74);
+}
+
+#temperature {
+    background-color: rgb(120, 14, 89);
+}
+
+
+.types {
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    height: 400px;
+}
+
+
+.control_box {
+    background-color: rgb(20, 109, 134);
+    height: 620px;
+    width: 1300px;
+    margin-left: 80px;
+    margin-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    padding: 20px 20px;
+
+}
+
+.cal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(41, 195, 195);
+    height: 100%;
+    z-index: 6;
+}
+
+.keypad {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 70%;
+    padding-left: 160px;
+    padding-right: 70px;
+    margin: auto 0;
+    width: 90%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    margin: 6px;
+    background-color: rgb(217, 217, 217);
+    border-radius: 20%;
+    text-align: center;
+    padding: auto;
+    border: 1px solid #999;
+    line-height: 90px;
+    font-size: 35px;
+    cursor: pointer;
+    font-weight: 1000;
+}
+
+/* display */
+
+
+
+#display {
+    background-color: white;
+    height: 100px;
+    margin: 15px 10px;
+    padding: 10px 30px;
+    color: red;
+    font-size: 60px;
+    text-align: end;
+    border-radius: 4px;
+}
